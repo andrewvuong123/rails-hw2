@@ -1,0 +1,11 @@
+<h1> Update City </h1>
+
+<%= form_with local: true, method: 'post', url: "/update" do |form| %>
+  City Name: <%= form.text_field :name %><br>
+  City Population: <%= form.number_field :population %><br>
+  City Landmark: <%= form.text_field :landmark %><br>
+  <!-- Add the fields that you need for your schema! -->
+
+  <%= form.submit "Update" %>
+<% end %>
+

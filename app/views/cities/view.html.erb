@@ -1,0 +1,19 @@
+<h1> List of Cities </h1>
+
+	
+	<% if  @c.nil? %>
+			<p> This is <%= @c[:name] %> with a population of <%= @c.population %>. The most famous landmark is <%= @c.landmark %></p>
+	
+
+	<% else %>
+		<% if not @cities.empty? %>
+			<% @cities.values.each do |c| %>
+
+				<p> This is <%= c.name %> with a population of <%= c.population %>. The most famous landmark is <%= c.landmark %>. The temperature is <%= c.weather[:temperature] %> </p> 
+				<% end %>
+		<% else %>
+			<p> There are no cities! Go create one </p>
+			<%=link_to "New", 'http://localhost:1337/cities/new' %>
+		<% end %>
+	
+	<% end %>
