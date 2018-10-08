@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ruby on Rails
 
 This is an example project of a [Ruby on Rails](http://rubyonrails.org) web application that runs in Glitch.com.
@@ -7,3 +8,6 @@ This is an example project of a [Ruby on Rails](http://rubyonrails.org) web appl
 - Glitch instances only have 128mb of disk space so it will be unusable to devolop using this environment.
 - Added the `.gemrc` file to avoid installing documentation to use as less disk space as possible.
 - Includes an axample of a `glitch.json` file allowing the application to run with the default Glitch configuration.
+=======
+# rails-hw2
+>>>>>>> cd2c3b60e7c745c782856e5eb4bb4b2d0ba37f87
